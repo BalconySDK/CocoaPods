@@ -14,7 +14,6 @@
 #import "VioozerShare.h"
 #import "VioozerQuestion.h"
 #import "VioozerFeedItem.h"
-#import "WhiteLabelVC.h"
 
 
 typedef enum VioozerLanguage
