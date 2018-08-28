@@ -268,7 +268,17 @@ typedef enum VioozerLanguage
  * set the main color of the SDK (background and text color)
  * Default is Balcony Red color with white text
  */
+
 -(void) setSDKColorBackground: (UIColor*) bkgColor andTextColor: (UIColor*) txtColor;
+
+/*
+ 
+ ***
+ METHODS BELOW NOT INTENDED FOR API CALLS
+ ***
+ 
+ */
+
 
 
 /////////////////////////////////////////////////
@@ -574,5 +584,10 @@ typedef void (^SMSInviteCallback)();
  * MiniSDK: used internally to launch ViewControllers with consistent color scheme and settings
  */
 -(void) presentViewController:(UIViewController*) vc;
+
+/*
+ * DEBUG
+ */
+-(NSString*) printSwiftAttribute;
 
 @end
