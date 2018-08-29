@@ -122,15 +122,17 @@ Pod::Spec.new do |s|
   
   s.frameworks = 'ImageIO', 'AVFoundation', 'QuartzCore', 'CoreMedia', 'SystemConfiguration', 'CoreData', 'Foundation'
   s.xcconfig = { "OTHER_LDFLAGS" => "-lz" }
+    
+    
+    # TRYING TO LINT MIXED CONTENT OBJC + SWIFT
+    
     #s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => 'VioozerAPI.h' }
   #s.static_framework = true
     #s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   #s.xcconfig = { "OTHER_LDFLAGS" => "-lz", "DEFINES_MODULE" => "YES", "SWIFT_OBJC_BRIDGING_HEADER" => "$(PODS_TARGET_SRCROOT)/../../VioozerSDK/VioozerAPI.h"  }
   #s.pod_target_xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '$(PODS_TARGET_SRCROOT)/../../VioozerSDK/VioozerAPI.h' }
     #s.module_name = "VioozerSDK"
-
-      
-   #s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+    #s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -145,6 +147,7 @@ Pod::Spec.new do |s|
   s.dependency 'AFNetworking', '~> 2.5'
   # s.dependency 'AFNetworking', '~> 3.0'
   s.dependency 'SVProgressHUD'
+  s.dependency 'OpenTok'
   
 
 
