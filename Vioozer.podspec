@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
   
   s.frameworks = 'ImageIO', 'AVFoundation', 'QuartzCore', 'CoreMedia', 'SystemConfiguration', 'CoreData', 'Foundation'
   s.xcconfig = { "OTHER_LDFLAGS" => "-lz" }
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+  #s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
