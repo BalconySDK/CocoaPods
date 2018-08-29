@@ -122,7 +122,13 @@ Pod::Spec.new do |s|
   
   s.frameworks = 'ImageIO', 'AVFoundation', 'QuartzCore', 'CoreMedia', 'SystemConfiguration', 'CoreData', 'Foundation'
   s.xcconfig = { "OTHER_LDFLAGS" => "-lz" }
-  #s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+    #s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => 'VioozerAPI.h' }
+  s.static_framework = true
+    
+  # s.pod_target_xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '$(PODS_TARGET_SRCROOT)/../../VioozerSDK/VioozerAPI.h' }
+
+      
+   #s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
