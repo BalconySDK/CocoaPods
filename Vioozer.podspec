@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
   s.homepage         = "http://www.balcony.io/"
   
     
-  s.source           = { :git => "https://github.com/BalconySDK/CocoaPods.git" }
+  # s.source           = { :git => "https://github.com/BalconySDK/CocoaPods.git" }
+  s.source           = { :git => "https://github.com/BalconySDK/CocoaPods.git", :tag => "#{s.version}" }}
   s.license          = "BSD"
   # s.requires_arc     = true
   # s.static_framework = true
