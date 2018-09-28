@@ -280,7 +280,6 @@ typedef enum VioozerLanguage
  */
 
 
-
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 
@@ -584,10 +583,5 @@ typedef void (^SMSInviteCallback)();
  * MiniSDK: used internally to launch ViewControllers with consistent color scheme and settings
  */
 -(void) presentViewController:(UIViewController*) vc;
-
-/*
- * DEBUG
- */
--(NSString*) printSwiftAttribute;
 
 @end
