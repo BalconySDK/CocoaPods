@@ -29,5 +29,6 @@ Pod::Spec.new do |s|
   s.dependency 'AWSCognito'    
   s.dependency 'AFNetworking', '~> 2.5'
   s.dependency 'SVProgressHUD'
-  s.dependency 'OpenTok'
+  # s.dependency 'OpenTok'
+    
 end
